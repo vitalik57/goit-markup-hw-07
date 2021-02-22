@@ -1,3 +1,153 @@
-.page-header {
-  background-color: aquamarine;
+$color: #2196f3;
+$text-color: #757575;
+$teitle-color: #ffffff;
+h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+body {
+  text-decoration: none;
+  list-style: none;
+  font-family: Roboto, sans-serif;
+  color: #212121;
+  font-style: normal;
+  font-weight: normal;
+
+  margin: 0;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0px auto;
+}
+.site-nav {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  padding: 0;
+  margin: 0;
+  color: black;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+
+  display: block;
+  font-size: 26px;
+  line-height: 31px;
+
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.hero {
+  align-items: center;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+.link-text {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: #212121;
+  margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition-property: all;
+  transition-duration: 250ms;
+  &:hover {
+    color: $color;
+  }
+  &:focus {
+    color: $color;
+  }
+  &:hover::after {
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &.current::after {
+    content: " ";
+
+    display: block;
+    height: 5px;
+    position: absolute;
+
+    width: 100%;
+    background: #2196f3;
+    border-radius: 2px;
+    left: 0;
+    bottom: 0;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.web {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  margin-right: 50px;
+
+  display: block;
+  align-items: center;
+  &:hover {
+    color: $color;
+  }
+  &:hover svg {
+    fill: $color;
+  }
+}
+.number {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: $text-color;
+  display: block;
+  align-items: center;
+  &:hover {
+    color: $color;
+  }
+}
+.phone {
+  color: $text-color;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  &:hover {
+    color: $color;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.web-studio {
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  fill: currentColor;
+  margin-right: 10px;
+  &:hover {
+    color: $color;
+  }
+  &:hover svg {
+    fill: $color;
+  }
+}
+span {
+  font-family: Raleway, sans-serif;
+  color: #2196f3;
 }

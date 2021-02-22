@@ -281,6 +281,7 @@ span {
   display: flex;
   list-style: none;
   align-items: center;
+  justify-content: center;
 }
 .korona {
   transition-property: all;
@@ -655,7 +656,6 @@ header {
 }
 
 .sanji {
-  /* background-image: url("./image/Img20.jpg"); */
   text-align: center;
 }
 .jjj {
@@ -698,8 +698,10 @@ header {
   padding-bottom: 94px;
 }
 .blake {
-  /* width: 1600px; */
-  /* height: 600px; */
+  padding-bottom: 280px;
+  padding-top: 200px;
+
+  background-color: #2f303a;
   left: 0px;
   top: 80px;
   background-image: url("./image/Img20.jpg");
@@ -984,8 +986,6 @@ textarea {
   padding-left: 42px;
 }
 
-.form-input-checkbox {
-}
 .messeg {
   width: 358px;
   height: 50px;
@@ -1072,8 +1072,7 @@ textarea {
 
   color: #ffffff;
 }
-.telegram {
-}
+
 .form-footer-messeg {
   display: flex;
 }
@@ -1094,4 +1093,7 @@ textarea {
   display: flex;
   margin-top: 42px;
   margin-left: 12px;
+}
+.lable-checkbox {
+  display: flex;
 }

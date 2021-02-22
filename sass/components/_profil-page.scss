@@ -1,0 +1,111 @@
+.big {
+  padding-top: 100px;
+  padding-bottom: 94px;
+}
+.our {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+.three {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.space {
+  margin-right: 8px;
+}
+.two {
+  padding: 0;
+  /* padding-bottom: 94px; */
+  margin-top: 100px;
+  margin-top: -30px;
+  margin-left: -30px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+.two {
+  padding: 0;
+  /* padding-bottom: 94px; */
+  margin-top: 100px;
+  margin-top: -30px;
+  margin-left: -30px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+.give {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  margin-left: 30px;
+  margin-top: 30px;
+  &:focus {
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  &:hover {
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+.give:nth-child(3n) {
+  margin-right: 0px;
+}
+.virus {
+  display: block;
+}
+.ataka {
+  position: relative;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+}
+.korona {
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+}
+.ataka:hover .korona {
+  opacity: 1;
+  top: 0;
+}
+.korona {
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 63px 24px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  top: 100%;
+  left: 0;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  background-color: #2196f3;
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}

@@ -1,1 +1,6 @@
-@import "./vars" @import "./base/normalise" @import;
+@import "./components/page-header";
+@import "./components/contant_page";
+@import "./components/teitlepage";
+@import "./components/formpage";
+@import "./base/normalise";
+@import "./components/logo";
