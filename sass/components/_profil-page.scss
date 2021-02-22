@@ -6,7 +6,9 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  flex-wrap: wrap;
+}
+.space {
+  margin-right: 8px;
 }
 .three {
   font-family: Roboto, sans-serif;
@@ -22,9 +24,24 @@
   background: #f5f4fa;
   border-radius: 4px;
 }
-.space {
-  margin-right: 8px;
+.three:focus {
+  background-color: $color;
+  color: #ffffff;
 }
+.dragon {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+pravku .four {
+  align-items: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+// pravku
 .two {
   padding: 0;
   /* padding-bottom: 94px; */
@@ -37,17 +54,15 @@
 
   list-style: none;
 }
-.two {
-  padding: 0;
-  /* padding-bottom: 94px; */
-  margin-top: 100px;
-  margin-top: -30px;
-  margin-left: -30px;
-
-  display: flex;
-  flex-wrap: wrap;
-
-  list-style: none;
+.give:hover,
+.give:focus {
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.give:nth-child(3n) {
+  margin-right: 0px;
 }
 .give {
   background: #ffffff;
@@ -55,21 +70,7 @@
   box-sizing: border-box;
   margin-left: 30px;
   margin-top: 30px;
-  &:focus {
-    border: 1px solid #eeeeee;
-    box-sizing: border-box;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
-  &:hover {
-    border: 1px solid #eeeeee;
-    box-sizing: border-box;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
-}
-.give:nth-child(3n) {
-  margin-right: 0px;
+  width: 370px;
 }
 .virus {
   display: block;
@@ -79,15 +80,27 @@
   transition-property: all;
   transition-duration: 250ms;
   transition-timing-function: linear;
+  &::before {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: $color;
+
+    opacity: 0;
+  }
+  &:hover::before {
+    opacity: 0.9;
+  }
+  &:hover.korona {
+    opacity: 1;
+    top: 0;
+  }
 }
-.korona {
-  transition-property: all;
-  transition-duration: 250ms;
-  transition-timing-function: linear;
-}
-.ataka:hover .korona {
-  opacity: 1;
-  top: 0;
+.ataka:hover,
+.ataka:focus {
+  background-color: $color;
 }
 .korona {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -103,9 +116,42 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 28px;
-  background-color: #2196f3;
+  background-color: $color;
 
   letter-spacing: 0.03em;
 
   color: #ffffff;
+}
+.korona {
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+}
+.imgname {
+  padding: 20px 24px;
+  border-bottom: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+}
+
+.flix-box {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+
+  letter-spacing: 0.06em;
+
+  color: #212121;
+}
+.information {
+  margin: 0%;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
 }
